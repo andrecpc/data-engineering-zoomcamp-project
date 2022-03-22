@@ -1,0 +1,45 @@
+[2022-01-31 20:03:04,029] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Local_Ingestion_Dag.ingest scheduled__2021-01-02T06:00:00+00:00 [queued]>
+[2022-01-31 20:03:04,039] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: Local_Ingestion_Dag.ingest scheduled__2021-01-02T06:00:00+00:00 [queued]>
+[2022-01-31 20:03:04,040] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-31 20:03:04,040] {taskinstance.py:1239} INFO - Starting attempt 8 of 8
+[2022-01-31 20:03:04,040] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-31 20:03:04,051] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): ingest> on 2021-01-02 06:00:00+00:00
+[2022-01-31 20:03:04,056] {standard_task_runner.py:52} INFO - Started process 292 to run task
+[2022-01-31 20:03:04,061] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'Local_Ingestion_Dag', 'ingest', 'scheduled__2021-01-02T06:00:00+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_local.py', '--cfg-path', '/tmp/tmp82y9h45k', '--error-file', '/tmp/tmpu840be4e']
+[2022-01-31 20:03:04,062] {standard_task_runner.py:77} INFO - Job 71: Subtask ingest
+[2022-01-31 20:03:04,130] {logging_mixin.py:109} INFO - Running <TaskInstance: Local_Ingestion_Dag.ingest scheduled__2021-01-02T06:00:00+00:00 [running]> on host fde9c14545be
+[2022-01-31 20:03:04,176] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-01-31 20:03:04,198] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=Local_Ingestion_Dag
+AIRFLOW_CTX_TASK_ID=ingest
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-02T06:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-02T06:00:00+00:00
+[2022-01-31 20:03:04,199] {logging_mixin.py:109} INFO - yellow_taxi_2021_01 /opt/***/output_2021-01.csv 2021-01-02T06:00:00+00:00
+[2022-01-31 20:03:04,210] {logging_mixin.py:109} INFO - connection , inserting data...
+[2022-01-31 20:03:33,199] {logging_mixin.py:109} INFO - inserted first chunk, took 28.989 second
+[2022-01-31 20:04:01,105] {logging_mixin.py:109} INFO - inserted another chunk, took 27.905 second
+[2022-01-31 20:04:29,531] {logging_mixin.py:109} INFO - inserted another chunk, took 28.426 second
+[2022-01-31 20:04:58,183] {logging_mixin.py:109} INFO - inserted another chunk, took 28.652 second
+[2022-01-31 20:05:27,389] {logging_mixin.py:109} INFO - inserted another chunk, took 29.206 second
+[2022-01-31 20:05:55,210] {logging_mixin.py:109} INFO - inserted another chunk, took 27.820 second
+[2022-01-31 20:06:23,577] {logging_mixin.py:109} INFO - inserted another chunk, took 28.367 second
+[2022-01-31 20:06:52,437] {logging_mixin.py:109} INFO - inserted another chunk, took 28.859 second
+[2022-01-31 20:07:20,344] {logging_mixin.py:109} INFO - inserted another chunk, took 27.906 second
+[2022-01-31 20:07:48,243] {logging_mixin.py:109} INFO - inserted another chunk, took 27.899 second
+[2022-01-31 20:08:16,263] {logging_mixin.py:109} INFO - inserted another chunk, took 28.020 second
+[2022-01-31 20:08:44,918] {logging_mixin.py:109} INFO - inserted another chunk, took 28.655 second
+[2022-01-31 20:08:45,161] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/operators/python.py:174: DtypeWarning: Columns (6) have mixed types.Specify dtype option on import or set low_memory=False.
+  return_value = self.execute_callable()
+
+[2022-01-31 20:09:12,650] {logging_mixin.py:109} INFO - inserted another chunk, took 27.732 second
+[2022-01-31 20:09:31,598] {logging_mixin.py:109} INFO - inserted another chunk, took 18.948 second
+[2022-01-31 20:09:31,599] {logging_mixin.py:109} INFO - Finished ingestion...
+[2022-01-31 20:09:31,599] {python.py:175} INFO - Done. Returned value was: None
+[2022-01-31 20:09:31,611] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=Local_Ingestion_Dag, task_id=ingest, execution_date=20210102T060000, start_date=20220131T200304, end_date=20220131T200931
+[2022-01-31 20:09:31,643] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-31 20:09:31,673] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

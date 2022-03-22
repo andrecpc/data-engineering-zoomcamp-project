@@ -1,0 +1,240 @@
+{
+    "name": "pipeline2_v2",
+    "description": "Data Pipeline Application",
+    "artifact": {
+        "name": "cdap-data-pipeline",
+        "version": "6.5.1",
+        "scope": "SYSTEM"
+    },
+    "config": {
+        "resources": {
+            "memoryMB": 2048,
+            "virtualCores": 1
+        },
+        "driverResources": {
+            "memoryMB": 2048,
+            "virtualCores": 1
+        },
+        "connections": [
+            {
+                "from": "GCS",
+                "to": "Wrangler"
+            },
+            {
+                "from": "Wrangler",
+                "to": "BigQuery"
+            },
+            {
+                "from": "Wrangler",
+                "to": "ErrorCollector"
+            },
+            {
+                "from": "ErrorCollector",
+                "to": "GCS2"
+            }
+        ],
+        "comments": [],
+        "postActions": [],
+        "properties": {},
+        "processTimingEnabled": true,
+        "stageLoggingEnabled": false,
+        "stages": [
+            {
+                "name": "GCS",
+                "plugin": {
+                    "name": "GCSFile",
+                    "type": "batchsource",
+                    "label": "GCS",
+                    "artifact": {
+                        "name": "google-cloud",
+                        "version": "0.18.1",
+                        "scope": "SYSTEM"
+                    },
+                    "properties": {
+                        "useConnection": "true",
+                        "connection": "${conn(Cloud Storage Default)}",
+                        "referenceName": "road-casualty-statistics-accident",
+                        "path": "gs://project_data_lake_red-height-339014/raw/",
+                        "format": "text",
+                        "sampleSize": "1000",
+                        "skipHeader": "false",
+                        "filenameOnly": "false",
+                        "recursive": "false",
+                        "encrypted": "false",
+                        "fileEncoding": "UTF-8",
+                        "schema": "{\"type\":\"record\",\"name\":\"text\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"}]}"
+                    }
+                },
+                "outputSchema": [
+                    {
+                        "name": "etlSchemaBody",
+                        "schema": "{\"type\":\"record\",\"name\":\"text\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"}]}"
+                    }
+                ],
+                "id": "GCS",
+                "type": "batchsource",
+                "label": "GCS",
+                "icon": "fa-plug"
+            },
+            {
+                "name": "Wrangler",
+                "plugin": {
+                    "name": "Wrangler",
+                    "type": "transform",
+                    "label": "Wrangler",
+                    "artifact": {
+                        "name": "wrangler-transform",
+                        "version": "4.5.1",
+                        "scope": "SYSTEM"
+                    },
+                    "properties": {
+                        "field": "*",
+                        "precondition": "false",
+                        "directives": "parse-as-csv :body ',' true\ndrop :body\nset-type :accident_year integer\nset-type :longitude float\nset-type :latitude float\nset-type :number_of_vehicles integer\nset-type :number_of_casualties integer\nset-column date date+\" \"+time\nparse-as-datetime :date \"dd/MM/yyyy HH:mm\"\nset-type :day_of_week integer\nset-type :speed_limit integer",
+                        "on-error": "send-to-error-port",
+                        "schema": "{\"type\":\"record\",\"name\":\"record\",\"fields\":[{\"name\":\"accident_index\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_year\",\"type\":[\"int\",\"null\"]},{\"name\":\"accident_reference\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_easting_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_northing_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"longitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"latitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"police_force\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_severity\",\"type\":[\"string\",\"null\"]},{\"name\":\"number_of_vehicles\",\"type\":[\"int\",\"null\"]},{\"name\":\"number_of_casualties\",\"type\":[\"int\",\"null\"]},{\"name\":\"date\",\"type\":[{\"type\":\"string\",\"logicalType\":\"datetime\"},\"null\"]},{\"name\":\"day_of_week\",\"type\":[\"int\",\"null\"]},{\"name\":\"time\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_ons_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_highway\",\"type\":[\"string\",\"null\"]},{\"name\":\"first_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"first_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_type\",\"type\":[\"string\",\"null\"]},{\"name\":\"speed_limit\",\"type\":[\"int\",\"null\"]},{\"name\":\"junction_detail\",\"type\":[\"string\",\"null\"]},{\"name\":\"junction_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_human_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_physical_facilities\",\"type\":[\"string\",\"null\"]},{\"name\":\"light_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"weather_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_surface_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"special_conditions_at_site\",\"type\":[\"string\",\"null\"]},{\"name\":\"carriageway_hazards\",\"type\":[\"string\",\"null\"]},{\"name\":\"urban_or_rural_area\",\"type\":[\"string\",\"null\"]},{\"name\":\"did_police_officer_attend_scene_of_accident\",\"type\":[\"string\",\"null\"]},{\"name\":\"trunk_road_flag\",\"type\":[\"string\",\"null\"]},{\"name\":\"lsoa_of_accident_location\",\"type\":[\"string\",\"null\"]}]}",
+                        "workspaceId": "4230f078-e7bb-4fa9-aeec-e491d36fc9d9"
+                    }
+                },
+                "outputSchema": [
+                    {
+                        "name": "etlSchemaBody",
+                        "schema": "{\"type\":\"record\",\"name\":\"record\",\"fields\":[{\"name\":\"accident_index\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_year\",\"type\":[\"int\",\"null\"]},{\"name\":\"accident_reference\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_easting_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_northing_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"longitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"latitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"police_force\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_severity\",\"type\":[\"string\",\"null\"]},{\"name\":\"number_of_vehicles\",\"type\":[\"int\",\"null\"]},{\"name\":\"number_of_casualties\",\"type\":[\"int\",\"null\"]},{\"name\":\"date\",\"type\":[{\"type\":\"string\",\"logicalType\":\"datetime\"},\"null\"]},{\"name\":\"day_of_week\",\"type\":[\"int\",\"null\"]},{\"name\":\"time\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_ons_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_highway\",\"type\":[\"string\",\"null\"]},{\"name\":\"first_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"first_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_type\",\"type\":[\"string\",\"null\"]},{\"name\":\"speed_limit\",\"type\":[\"int\",\"null\"]},{\"name\":\"junction_detail\",\"type\":[\"string\",\"null\"]},{\"name\":\"junction_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_human_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_physical_facilities\",\"type\":[\"string\",\"null\"]},{\"name\":\"light_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"weather_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_surface_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"special_conditions_at_site\",\"type\":[\"string\",\"null\"]},{\"name\":\"carriageway_hazards\",\"type\":[\"string\",\"null\"]},{\"name\":\"urban_or_rural_area\",\"type\":[\"string\",\"null\"]},{\"name\":\"did_police_officer_attend_scene_of_accident\",\"type\":[\"string\",\"null\"]},{\"name\":\"trunk_road_flag\",\"type\":[\"string\",\"null\"]},{\"name\":\"lsoa_of_accident_location\",\"type\":[\"string\",\"null\"]}]}"
+                    }
+                ],
+                "inputSchema": [
+                    {
+                        "name": "GCS",
+                        "schema": "{\"type\":\"record\",\"name\":\"text\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"}]}"
+                    }
+                ],
+                "id": "Wrangler",
+                "type": "transform",
+                "label": "Wrangler",
+                "icon": "icon-DataPreparation"
+            },
+            {
+                "name": "BigQuery",
+                "plugin": {
+                    "name": "BigQueryTable",
+                    "type": "batchsink",
+                    "label": "BigQuery",
+                    "artifact": {
+                        "name": "google-cloud",
+                        "version": "0.18.1",
+                        "scope": "SYSTEM"
+                    },
+                    "properties": {
+                        "referenceName": "bq",
+                        "project": "auto-detect",
+                        "dataset": "project_road_safety_data_all",
+                        "table": "table_road_safety",
+                        "serviceAccountType": "filePath",
+                        "serviceFilePath": "auto-detect",
+                        "operation": "insert",
+                        "truncateTable": "true",
+                        "allowSchemaRelaxation": "true",
+                        "location": "US",
+                        "createPartitionedTable": "true",
+                        "partitioningType": "TIME",
+                        "partitionByField": "date",
+                        "partitionFilterRequired": "false",
+                        "schema": "{\"name\":\"etlSchemaBody\",\"type\":\"record\",\"fields\":[{\"name\":\"accident_index\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_year\",\"type\":[\"int\",\"null\"]},{\"name\":\"accident_reference\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_easting_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_northing_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"longitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"latitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"police_force\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_severity\",\"type\":[\"string\",\"null\"]},{\"name\":\"number_of_vehicles\",\"type\":[\"int\",\"null\"]},{\"name\":\"number_of_casualties\",\"type\":[\"int\",\"null\"]},{\"name\":\"date\",\"type\":[{\"type\":\"string\",\"logicalType\":\"datetime\"},\"null\"]},{\"name\":\"day_of_week\",\"type\":[\"int\",\"null\"]},{\"name\":\"time\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_ons_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_highway\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_type\",\"type\":[\"string\",\"null\"]},{\"name\":\"speed_limit\",\"type\":[\"int\",\"null\"]},{\"name\":\"junction_detail\",\"type\":[\"string\",\"null\"]},{\"name\":\"junction_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_human_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_physical_facilities\",\"type\":[\"string\",\"null\"]},{\"name\":\"light_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"weather_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_surface_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"special_conditions_at_site\",\"type\":[\"string\",\"null\"]},{\"name\":\"urban_or_rural_area\",\"type\":[\"string\",\"null\"]}]}"
+                    }
+                },
+                "outputSchema": [
+                    {
+                        "name": "etlSchemaBody",
+                        "schema": "{\"name\":\"etlSchemaBody\",\"type\":\"record\",\"fields\":[{\"name\":\"accident_index\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_year\",\"type\":[\"int\",\"null\"]},{\"name\":\"accident_reference\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_easting_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_northing_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"longitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"latitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"police_force\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_severity\",\"type\":[\"string\",\"null\"]},{\"name\":\"number_of_vehicles\",\"type\":[\"int\",\"null\"]},{\"name\":\"number_of_casualties\",\"type\":[\"int\",\"null\"]},{\"name\":\"date\",\"type\":[{\"type\":\"string\",\"logicalType\":\"datetime\"},\"null\"]},{\"name\":\"day_of_week\",\"type\":[\"int\",\"null\"]},{\"name\":\"time\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_ons_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_highway\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_type\",\"type\":[\"string\",\"null\"]},{\"name\":\"speed_limit\",\"type\":[\"int\",\"null\"]},{\"name\":\"junction_detail\",\"type\":[\"string\",\"null\"]},{\"name\":\"junction_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_human_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_physical_facilities\",\"type\":[\"string\",\"null\"]},{\"name\":\"light_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"weather_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_surface_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"special_conditions_at_site\",\"type\":[\"string\",\"null\"]},{\"name\":\"urban_or_rural_area\",\"type\":[\"string\",\"null\"]}]}"
+                    }
+                ],
+                "inputSchema": [
+                    {
+                        "name": "Wrangler",
+                        "schema": "{\"type\":\"record\",\"name\":\"record\",\"fields\":[{\"name\":\"accident_index\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_year\",\"type\":[\"int\",\"null\"]},{\"name\":\"accident_reference\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_easting_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"location_northing_osgr\",\"type\":[\"string\",\"null\"]},{\"name\":\"longitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"latitude\",\"type\":[\"float\",\"null\"]},{\"name\":\"police_force\",\"type\":[\"string\",\"null\"]},{\"name\":\"accident_severity\",\"type\":[\"string\",\"null\"]},{\"name\":\"number_of_vehicles\",\"type\":[\"int\",\"null\"]},{\"name\":\"number_of_casualties\",\"type\":[\"int\",\"null\"]},{\"name\":\"date\",\"type\":[{\"type\":\"string\",\"logicalType\":\"datetime\"},\"null\"]},{\"name\":\"day_of_week\",\"type\":[\"int\",\"null\"]},{\"name\":\"time\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_ons_district\",\"type\":[\"string\",\"null\"]},{\"name\":\"local_authority_highway\",\"type\":[\"string\",\"null\"]},{\"name\":\"first_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"first_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_type\",\"type\":[\"string\",\"null\"]},{\"name\":\"speed_limit\",\"type\":[\"int\",\"null\"]},{\"name\":\"junction_detail\",\"type\":[\"string\",\"null\"]},{\"name\":\"junction_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_class\",\"type\":[\"string\",\"null\"]},{\"name\":\"second_road_number\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_human_control\",\"type\":[\"string\",\"null\"]},{\"name\":\"pedestrian_crossing_physical_facilities\",\"type\":[\"string\",\"null\"]},{\"name\":\"light_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"weather_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"road_surface_conditions\",\"type\":[\"string\",\"null\"]},{\"name\":\"special_conditions_at_site\",\"type\":[\"string\",\"null\"]},{\"name\":\"carriageway_hazards\",\"type\":[\"string\",\"null\"]},{\"name\":\"urban_or_rural_area\",\"type\":[\"string\",\"null\"]},{\"name\":\"did_police_officer_attend_scene_of_accident\",\"type\":[\"string\",\"null\"]},{\"name\":\"trunk_road_flag\",\"type\":[\"string\",\"null\"]},{\"name\":\"lsoa_of_accident_location\",\"type\":[\"string\",\"null\"]}]}"
+                    }
+                ],
+                "id": "BigQuery",
+                "type": "batchsink",
+                "label": "BigQuery",
+                "icon": "fa-plug"
+            },
+            {
+                "name": "ErrorCollector",
+                "plugin": {
+                    "name": "ErrorCollector",
+                    "type": "errortransform",
+                    "label": "ErrorCollector",
+                    "artifact": {
+                        "name": "core-plugins",
+                        "version": "2.7.1",
+                        "scope": "SYSTEM"
+                    },
+                    "properties": {
+                        "messageField": "msg",
+                        "codeField": "code",
+                        "stageField": "node"
+                    }
+                },
+                "outputSchema": [
+                    {
+                        "name": "etlSchemaBody",
+                        "schema": "{\"type\":\"record\",\"name\":\"errortext\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"},{\"name\":\"msg\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"int\"},{\"name\":\"node\",\"type\":\"string\"}]}"
+                    }
+                ],
+                "inputSchema": [
+                    {
+                        "name": "Wrangler",
+                        "schema": "{\"type\":\"record\",\"name\":\"text\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"}]}"
+                    }
+                ],
+                "id": "ErrorCollector",
+                "type": "errortransform",
+                "label": "ErrorCollector",
+                "icon": "fa-exclamation-triangle"
+            },
+            {
+                "name": "GCS2",
+                "plugin": {
+                    "name": "GCS",
+                    "type": "batchsink",
+                    "label": "GCS2",
+                    "artifact": {
+                        "name": "google-cloud",
+                        "version": "0.18.1",
+                        "scope": "SYSTEM"
+                    },
+                    "properties": {
+                        "referenceName": "errors",
+                        "project": "auto-detect",
+                        "path": "gs://project_road_safety_red-height-339014/",
+                        "suffix": "yyyy-MM-dd-HH-mm",
+                        "format": "csv",
+                        "serviceAccountType": "filePath",
+                        "serviceFilePath": "auto-detect",
+                        "location": "us",
+                        "contentType": "application/octet-stream",
+                        "schema": "{\"type\":\"record\",\"name\":\"errortext\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"},{\"name\":\"msg\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"int\"},{\"name\":\"node\",\"type\":\"string\"}]}",
+                        "writeHeader": "false"
+                    }
+                },
+                "outputSchema": "{\"type\":\"record\",\"name\":\"errortext\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"},{\"name\":\"msg\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"int\"},{\"name\":\"node\",\"type\":\"string\"}]}",
+                "inputSchema": [
+                    {
+                        "name": "ErrorCollector",
+                        "schema": "{\"type\":\"record\",\"name\":\"errortext\",\"fields\":[{\"name\":\"body\",\"type\":\"string\"},{\"name\":\"msg\",\"type\":\"string\"},{\"name\":\"code\",\"type\":\"int\"},{\"name\":\"node\",\"type\":\"string\"}]}"
+                    }
+                ],
+                "id": "GCS2",
+                "type": "batchsink",
+                "label": "GCS2",
+                "icon": "fa-plug"
+            }
+        ],
+        "schedule": "0 1 */1 * *",
+        "engine": "spark",
+        "numOfRecordsPreview": 100,
+        "description": "Data Pipeline Application",
+        "maxConcurrentRuns": 1
+    }
+}

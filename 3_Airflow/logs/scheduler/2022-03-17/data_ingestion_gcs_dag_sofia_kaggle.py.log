@@ -1,0 +1,934 @@
+[2022-03-17 05:27:52,745] {processor.py:163} INFO - Started process (PID=34) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:27:52,747] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:27:52,747] {logging_mixin.py:109} INFO - [2022-03-17 05:27:52,747] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:27:52,824] {logging_mixin.py:109} INFO - [2022-03-17 05:27:52,819] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:27:52,841] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:27:52,855] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.114 seconds
+[2022-03-17 05:28:22,978] {processor.py:163} INFO - Started process (PID=71) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:28:22,984] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:28:22,984] {logging_mixin.py:109} INFO - [2022-03-17 05:28:22,984] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:28:23,021] {logging_mixin.py:109} INFO - [2022-03-17 05:28:23,020] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:28:23,037] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:28:23,046] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.072 seconds
+[2022-03-17 05:28:53,181] {processor.py:163} INFO - Started process (PID=108) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:28:53,187] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:28:53,188] {logging_mixin.py:109} INFO - [2022-03-17 05:28:53,188] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:28:53,225] {logging_mixin.py:109} INFO - [2022-03-17 05:28:53,223] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:28:53,241] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:28:53,249] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.072 seconds
+[2022-03-17 05:29:23,386] {processor.py:163} INFO - Started process (PID=136) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:29:23,387] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:29:23,387] {logging_mixin.py:109} INFO - [2022-03-17 05:29:23,387] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:29:23,423] {logging_mixin.py:109} INFO - [2022-03-17 05:29:23,422] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:29:23,439] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:29:23,447] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.066 seconds
+[2022-03-17 05:29:53,583] {processor.py:163} INFO - Started process (PID=171) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:29:53,588] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:29:53,589] {logging_mixin.py:109} INFO - [2022-03-17 05:29:53,589] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:29:53,626] {logging_mixin.py:109} INFO - [2022-03-17 05:29:53,625] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:29:53,642] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:29:53,652] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.073 seconds
+[2022-03-17 05:30:23,785] {processor.py:163} INFO - Started process (PID=207) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:30:23,786] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:30:23,787] {logging_mixin.py:109} INFO - [2022-03-17 05:30:23,787] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:30:23,823] {logging_mixin.py:109} INFO - [2022-03-17 05:30:23,822] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:30:23,839] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:30:23,848] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.067 seconds
+[2022-03-17 05:30:53,983] {processor.py:163} INFO - Started process (PID=234) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:30:53,985] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:30:53,986] {logging_mixin.py:109} INFO - [2022-03-17 05:30:53,986] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:30:54,023] {logging_mixin.py:109} INFO - [2022-03-17 05:30:54,022] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:30:54,041] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:30:54,050] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.071 seconds
+[2022-03-17 05:31:24,183] {processor.py:163} INFO - Started process (PID=269) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:31:24,184] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:31:24,185] {logging_mixin.py:109} INFO - [2022-03-17 05:31:24,185] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:31:24,221] {logging_mixin.py:109} INFO - [2022-03-17 05:31:24,220] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:31:24,237] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:31:24,246] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.067 seconds
+[2022-03-17 05:31:54,384] {processor.py:163} INFO - Started process (PID=304) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:31:54,386] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:31:54,387] {logging_mixin.py:109} INFO - [2022-03-17 05:31:54,387] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:31:54,426] {logging_mixin.py:109} INFO - [2022-03-17 05:31:54,424] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:31:54,441] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:31:54,450] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.070 seconds
+[2022-03-17 05:32:24,587] {processor.py:163} INFO - Started process (PID=331) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:32:24,589] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:32:24,590] {logging_mixin.py:109} INFO - [2022-03-17 05:32:24,590] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:32:24,628] {logging_mixin.py:109} INFO - [2022-03-17 05:32:24,627] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:32:24,645] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:32:24,655] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.072 seconds
+[2022-03-17 05:32:54,802] {processor.py:163} INFO - Started process (PID=368) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:32:54,805] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:32:54,806] {logging_mixin.py:109} INFO - [2022-03-17 05:32:54,806] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:32:54,845] {logging_mixin.py:109} INFO - [2022-03-17 05:32:54,844] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:32:54,864] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:32:54,873] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.075 seconds
+[2022-03-17 05:33:25,005] {processor.py:163} INFO - Started process (PID=405) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:33:25,011] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:33:25,012] {logging_mixin.py:109} INFO - [2022-03-17 05:33:25,012] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:33:25,050] {logging_mixin.py:109} INFO - [2022-03-17 05:33:25,048] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:33:25,066] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:33:25,075] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.074 seconds
+[2022-03-17 05:33:55,210] {processor.py:163} INFO - Started process (PID=434) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:33:55,212] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:33:55,212] {logging_mixin.py:109} INFO - [2022-03-17 05:33:55,212] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:33:55,250] {logging_mixin.py:109} INFO - [2022-03-17 05:33:55,248] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:33:55,266] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:33:55,276] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.070 seconds
+[2022-03-17 05:34:25,410] {processor.py:163} INFO - Started process (PID=471) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:34:25,413] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 05:34:25,414] {logging_mixin.py:109} INFO - [2022-03-17 05:34:25,414] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:34:25,448] {logging_mixin.py:109} INFO - [2022-03-17 05:34:25,447] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+  File "/root/.local/lib/python3.7/site-packages/kaggle/__init__.py", line 23, in <module>
+    api.authenticate()
+  File "/root/.local/lib/python3.7/site-packages/kaggle/api/kaggle_api_extended.py", line 166, in authenticate
+    self.config_file, self.config_dir))
+OSError: Could not find kaggle.json. Make sure it's located in /root/.kaggle. Or use the environment method.
+[2022-03-17 05:34:25,465] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 05:34:25,474] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.068 seconds
+[2022-03-17 08:42:11,593] {processor.py:163} INFO - Started process (PID=44) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:42:11,623] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:42:11,624] {logging_mixin.py:109} INFO - [2022-03-17 08:42:11,624] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:42:11,630] {logging_mixin.py:109} INFO - [2022-03-17 08:42:11,629] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:42:11,671] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:42:11,684] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.096 seconds
+[2022-03-17 08:42:41,767] {processor.py:163} INFO - Started process (PID=76) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:42:41,768] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:42:41,769] {logging_mixin.py:109} INFO - [2022-03-17 08:42:41,769] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:42:41,772] {logging_mixin.py:109} INFO - [2022-03-17 08:42:41,771] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:42:41,790] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:42:41,800] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:43:11,874] {processor.py:163} INFO - Started process (PID=97) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:43:11,883] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:43:11,883] {logging_mixin.py:109} INFO - [2022-03-17 08:43:11,883] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:43:11,887] {logging_mixin.py:109} INFO - [2022-03-17 08:43:11,886] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:43:11,905] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:43:11,914] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.043 seconds
+[2022-03-17 08:43:41,980] {processor.py:163} INFO - Started process (PID=127) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:43:41,981] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:43:41,982] {logging_mixin.py:109} INFO - [2022-03-17 08:43:41,982] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:43:41,985] {logging_mixin.py:109} INFO - [2022-03-17 08:43:41,984] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:43:42,004] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:43:42,014] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:44:12,080] {processor.py:163} INFO - Started process (PID=158) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:44:12,089] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:44:12,090] {logging_mixin.py:109} INFO - [2022-03-17 08:44:12,090] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:44:12,093] {logging_mixin.py:109} INFO - [2022-03-17 08:44:12,092] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:44:12,113] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:44:12,122] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.045 seconds
+[2022-03-17 08:44:42,194] {processor.py:163} INFO - Started process (PID=177) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:44:42,199] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:44:42,200] {logging_mixin.py:109} INFO - [2022-03-17 08:44:42,200] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:44:42,203] {logging_mixin.py:109} INFO - [2022-03-17 08:44:42,202] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:44:42,222] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:44:42,230] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.040 seconds
+[2022-03-17 08:45:12,300] {processor.py:163} INFO - Started process (PID=207) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:45:12,302] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:45:12,303] {logging_mixin.py:109} INFO - [2022-03-17 08:45:12,302] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:45:12,306] {logging_mixin.py:109} INFO - [2022-03-17 08:45:12,305] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:45:12,327] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:45:12,337] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.041 seconds
+[2022-03-17 08:45:42,413] {processor.py:163} INFO - Started process (PID=236) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:45:42,419] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:45:42,420] {logging_mixin.py:109} INFO - [2022-03-17 08:45:42,420] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:45:42,424] {logging_mixin.py:109} INFO - [2022-03-17 08:45:42,423] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:45:42,447] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:45:42,459] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.051 seconds
+[2022-03-17 08:46:12,519] {processor.py:163} INFO - Started process (PID=258) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:46:12,521] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:46:12,521] {logging_mixin.py:109} INFO - [2022-03-17 08:46:12,521] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:46:12,525] {logging_mixin.py:109} INFO - [2022-03-17 08:46:12,524] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:46:12,543] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:46:12,551] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:46:42,622] {processor.py:163} INFO - Started process (PID=287) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:46:42,623] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:46:42,624] {logging_mixin.py:109} INFO - [2022-03-17 08:46:42,624] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:46:42,627] {logging_mixin.py:109} INFO - [2022-03-17 08:46:42,626] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:46:42,644] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:46:42,657] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.038 seconds
+[2022-03-17 08:47:12,738] {processor.py:163} INFO - Started process (PID=308) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:47:12,743] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:47:12,743] {logging_mixin.py:109} INFO - [2022-03-17 08:47:12,743] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:47:12,747] {logging_mixin.py:109} INFO - [2022-03-17 08:47:12,746] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:47:12,768] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:47:12,777] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.043 seconds
+[2022-03-17 08:47:42,847] {processor.py:163} INFO - Started process (PID=342) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:47:42,848] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:47:42,849] {logging_mixin.py:109} INFO - [2022-03-17 08:47:42,849] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:47:42,852] {logging_mixin.py:109} INFO - [2022-03-17 08:47:42,851] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:47:42,870] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:47:42,879] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:48:12,951] {processor.py:163} INFO - Started process (PID=372) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:48:12,953] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:48:12,954] {logging_mixin.py:109} INFO - [2022-03-17 08:48:12,954] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:48:12,957] {logging_mixin.py:109} INFO - [2022-03-17 08:48:12,956] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:48:12,976] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:48:12,984] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:48:43,056] {processor.py:163} INFO - Started process (PID=392) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:48:43,057] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:48:43,058] {logging_mixin.py:109} INFO - [2022-03-17 08:48:43,058] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:48:43,061] {logging_mixin.py:109} INFO - [2022-03-17 08:48:43,060] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:48:43,080] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:48:43,089] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:49:13,161] {processor.py:163} INFO - Started process (PID=422) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:49:13,168] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:49:13,169] {logging_mixin.py:109} INFO - [2022-03-17 08:49:13,168] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:49:13,172] {logging_mixin.py:109} INFO - [2022-03-17 08:49:13,171] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:49:13,190] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:49:13,202] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.045 seconds
+[2022-03-17 08:49:43,273] {processor.py:163} INFO - Started process (PID=452) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:49:43,274] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:49:43,275] {logging_mixin.py:109} INFO - [2022-03-17 08:49:43,275] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:49:43,279] {logging_mixin.py:109} INFO - [2022-03-17 08:49:43,278] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:49:43,312] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:49:43,322] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.054 seconds
+[2022-03-17 08:50:13,376] {processor.py:163} INFO - Started process (PID=474) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:50:13,380] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:50:13,380] {logging_mixin.py:109} INFO - [2022-03-17 08:50:13,380] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:50:13,384] {logging_mixin.py:109} INFO - [2022-03-17 08:50:13,383] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:50:13,402] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:50:13,411] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.039 seconds
+[2022-03-17 08:50:43,487] {processor.py:163} INFO - Started process (PID=506) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:50:43,488] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:50:43,489] {logging_mixin.py:109} INFO - [2022-03-17 08:50:43,489] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:50:43,492] {logging_mixin.py:109} INFO - [2022-03-17 08:50:43,491] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:50:43,509] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:50:43,519] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:51:13,593] {processor.py:163} INFO - Started process (PID=526) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:51:13,600] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:51:13,601] {logging_mixin.py:109} INFO - [2022-03-17 08:51:13,601] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:51:13,604] {logging_mixin.py:109} INFO - [2022-03-17 08:51:13,603] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:51:13,623] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:51:13,632] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.043 seconds
+[2022-03-17 08:51:43,697] {processor.py:163} INFO - Started process (PID=557) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:51:43,698] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:51:43,699] {logging_mixin.py:109} INFO - [2022-03-17 08:51:43,699] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:51:43,702] {logging_mixin.py:109} INFO - [2022-03-17 08:51:43,701] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:51:43,720] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:51:43,729] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:52:13,816] {processor.py:163} INFO - Started process (PID=588) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:52:13,819] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:52:13,820] {logging_mixin.py:109} INFO - [2022-03-17 08:52:13,820] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:52:13,824] {logging_mixin.py:109} INFO - [2022-03-17 08:52:13,823] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:52:13,850] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:52:13,863] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.052 seconds
+[2022-03-17 08:52:43,920] {processor.py:163} INFO - Started process (PID=607) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:52:43,923] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:52:43,924] {logging_mixin.py:109} INFO - [2022-03-17 08:52:43,924] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:52:43,927] {logging_mixin.py:109} INFO - [2022-03-17 08:52:43,926] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:52:43,946] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:52:43,955] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.038 seconds
+[2022-03-17 08:53:14,024] {processor.py:163} INFO - Started process (PID=637) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:53:14,026] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:53:14,026] {logging_mixin.py:109} INFO - [2022-03-17 08:53:14,026] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:53:14,030] {logging_mixin.py:109} INFO - [2022-03-17 08:53:14,029] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:53:14,047] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:53:14,056] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:53:44,134] {processor.py:163} INFO - Started process (PID=659) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:53:44,136] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:53:44,137] {logging_mixin.py:109} INFO - [2022-03-17 08:53:44,137] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:53:44,141] {logging_mixin.py:109} INFO - [2022-03-17 08:53:44,140] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:53:44,160] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:53:44,170] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.039 seconds
+[2022-03-17 08:54:14,243] {processor.py:163} INFO - Started process (PID=690) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:54:14,245] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:54:14,245] {logging_mixin.py:109} INFO - [2022-03-17 08:54:14,245] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:54:14,249] {logging_mixin.py:109} INFO - [2022-03-17 08:54:14,248] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:54:14,267] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:54:14,276] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:54:44,352] {processor.py:163} INFO - Started process (PID=719) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:54:44,354] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:54:44,355] {logging_mixin.py:109} INFO - [2022-03-17 08:54:44,355] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:54:44,358] {logging_mixin.py:109} INFO - [2022-03-17 08:54:44,357] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:54:44,377] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:54:44,387] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.039 seconds
+[2022-03-17 08:55:14,457] {processor.py:163} INFO - Started process (PID=740) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:55:14,458] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:55:14,459] {logging_mixin.py:109} INFO - [2022-03-17 08:55:14,459] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:55:14,462] {logging_mixin.py:109} INFO - [2022-03-17 08:55:14,461] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:55:14,480] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:55:14,489] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:55:44,563] {processor.py:163} INFO - Started process (PID=771) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:55:44,566] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:55:44,566] {logging_mixin.py:109} INFO - [2022-03-17 08:55:44,566] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:55:44,570] {logging_mixin.py:109} INFO - [2022-03-17 08:55:44,569] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:55:44,587] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:55:44,596] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:56:14,672] {processor.py:163} INFO - Started process (PID=802) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:56:14,674] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:56:14,675] {logging_mixin.py:109} INFO - [2022-03-17 08:56:14,675] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:56:14,679] {logging_mixin.py:109} INFO - [2022-03-17 08:56:14,678] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:56:14,703] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:56:14,714] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.047 seconds
+[2022-03-17 08:56:44,776] {processor.py:163} INFO - Started process (PID=824) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:56:44,778] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:56:44,779] {logging_mixin.py:109} INFO - [2022-03-17 08:56:44,779] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:56:44,782] {logging_mixin.py:109} INFO - [2022-03-17 08:56:44,781] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:56:44,800] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:56:44,809] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:57:14,894] {processor.py:163} INFO - Started process (PID=855) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:57:14,895] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:57:14,896] {logging_mixin.py:109} INFO - [2022-03-17 08:57:14,896] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:57:14,899] {logging_mixin.py:109} INFO - [2022-03-17 08:57:14,898] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:57:14,917] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:57:14,926] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:57:44,999] {processor.py:163} INFO - Started process (PID=876) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:57:45,000] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:57:45,001] {logging_mixin.py:109} INFO - [2022-03-17 08:57:45,001] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:57:45,005] {logging_mixin.py:109} INFO - [2022-03-17 08:57:45,004] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:57:45,023] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:57:45,032] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:58:15,101] {processor.py:163} INFO - Started process (PID=905) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:58:15,103] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:58:15,104] {logging_mixin.py:109} INFO - [2022-03-17 08:58:15,104] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:58:15,107] {logging_mixin.py:109} INFO - [2022-03-17 08:58:15,106] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:58:15,125] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:58:15,134] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:58:45,202] {processor.py:163} INFO - Started process (PID=939) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:58:45,203] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:58:45,204] {logging_mixin.py:109} INFO - [2022-03-17 08:58:45,204] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:58:45,207] {logging_mixin.py:109} INFO - [2022-03-17 08:58:45,206] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:58:45,225] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:58:45,234] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 08:59:15,313] {processor.py:163} INFO - Started process (PID=962) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:59:15,314] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:59:15,315] {logging_mixin.py:109} INFO - [2022-03-17 08:59:15,315] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:59:15,319] {logging_mixin.py:109} INFO - [2022-03-17 08:59:15,318] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:59:15,337] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:59:15,346] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 08:59:45,419] {processor.py:163} INFO - Started process (PID=993) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:59:45,420] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 08:59:45,421] {logging_mixin.py:109} INFO - [2022-03-17 08:59:45,420] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:59:45,424] {logging_mixin.py:109} INFO - [2022-03-17 08:59:45,423] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 08:59:45,442] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 08:59:45,452] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.037 seconds
+[2022-03-17 19:24:30,010] {processor.py:163} INFO - Started process (PID=42) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:24:30,017] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:24:30,018] {logging_mixin.py:109} INFO - [2022-03-17 19:24:30,018] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:24:30,023] {logging_mixin.py:109} INFO - [2022-03-17 19:24:30,022] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:24:30,043] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:24:30,055] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.049 seconds
+[2022-03-17 19:25:00,127] {processor.py:163} INFO - Started process (PID=73) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:25:00,128] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:25:00,129] {logging_mixin.py:109} INFO - [2022-03-17 19:25:00,129] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:25:00,132] {logging_mixin.py:109} INFO - [2022-03-17 19:25:00,131] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:25:00,150] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:25:00,159] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.035 seconds
+[2022-03-17 19:25:30,226] {processor.py:163} INFO - Started process (PID=94) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:25:30,234] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:25:30,234] {logging_mixin.py:109} INFO - [2022-03-17 19:25:30,234] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:25:30,238] {logging_mixin.py:109} INFO - [2022-03-17 19:25:30,237] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:25:30,255] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:25:30,263] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.041 seconds
+[2022-03-17 19:26:00,327] {processor.py:163} INFO - Started process (PID=124) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:26:00,332] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:26:00,333] {logging_mixin.py:109} INFO - [2022-03-17 19:26:00,333] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:26:00,336] {logging_mixin.py:109} INFO - [2022-03-17 19:26:00,336] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:26:00,353] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:26:00,362] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.039 seconds
+[2022-03-17 19:26:30,429] {processor.py:163} INFO - Started process (PID=154) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:26:30,430] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:26:30,431] {logging_mixin.py:109} INFO - [2022-03-17 19:26:30,431] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:26:30,434] {logging_mixin.py:109} INFO - [2022-03-17 19:26:30,433] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:26:30,453] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:26:30,463] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.038 seconds
+[2022-03-17 19:27:00,537] {processor.py:163} INFO - Started process (PID=175) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:27:00,542] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:27:00,543] {logging_mixin.py:109} INFO - [2022-03-17 19:27:00,542] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:27:00,546] {logging_mixin.py:109} INFO - [2022-03-17 19:27:00,545] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:27:00,563] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:27:00,572] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.039 seconds
+[2022-03-17 19:27:30,638] {processor.py:163} INFO - Started process (PID=207) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:27:30,640] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:27:30,641] {logging_mixin.py:109} INFO - [2022-03-17 19:27:30,641] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:27:30,644] {logging_mixin.py:109} INFO - [2022-03-17 19:27:30,643] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:27:30,661] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:27:30,670] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.035 seconds
+[2022-03-17 19:28:00,748] {processor.py:163} INFO - Started process (PID=237) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:28:00,749] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:28:00,750] {logging_mixin.py:109} INFO - [2022-03-17 19:28:00,750] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:28:00,756] {logging_mixin.py:109} INFO - [2022-03-17 19:28:00,754] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:28:00,781] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:28:00,794] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.051 seconds
+[2022-03-17 19:28:30,854] {processor.py:163} INFO - Started process (PID=258) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:28:30,857] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:28:30,858] {logging_mixin.py:109} INFO - [2022-03-17 19:28:30,858] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:28:30,861] {logging_mixin.py:109} INFO - [2022-03-17 19:28:30,860] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:28:30,878] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:28:30,886] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.036 seconds
+[2022-03-17 19:29:00,963] {processor.py:163} INFO - Started process (PID=287) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:29:00,964] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:29:00,965] {logging_mixin.py:109} INFO - [2022-03-17 19:29:00,965] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:29:00,969] {logging_mixin.py:109} INFO - [2022-03-17 19:29:00,968] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:29:00,988] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:29:01,003] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.045 seconds
+[2022-03-17 19:29:31,076] {processor.py:163} INFO - Started process (PID=310) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:29:31,079] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:29:31,079] {logging_mixin.py:109} INFO - [2022-03-17 19:29:31,079] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:29:31,083] {logging_mixin.py:109} INFO - [2022-03-17 19:29:31,082] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:29:31,103] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:29:31,111] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.039 seconds
+[2022-03-17 19:30:01,181] {processor.py:163} INFO - Started process (PID=342) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:30:01,183] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:30:01,184] {logging_mixin.py:109} INFO - [2022-03-17 19:30:01,184] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:30:01,187] {logging_mixin.py:109} INFO - [2022-03-17 19:30:01,186] {dagbag.py:334} ERROR - Failed to import: /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 331, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py", line 5, in <module>
+    import kaggle
+ModuleNotFoundError: No module named 'kaggle'
+[2022-03-17 19:30:01,204] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:30:01,212] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 0.035 seconds
+[2022-03-17 19:30:24,259] {processor.py:163} INFO - Started process (PID=363) to work on /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:30:24,261] {processor.py:642} INFO - Processing file /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py for tasks to queue
+[2022-03-17 19:30:24,261] {logging_mixin.py:109} INFO - [2022-03-17 19:30:24,261] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:30:26,560] {processor.py:654} INFO - DAG(s) dict_keys(['data_ingestion_gcs_dag_project']) retrieved from /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py
+[2022-03-17 19:30:29,922] {logging_mixin.py:109} INFO - [2022-03-17 19:30:29,922] {manager.py:496} INFO - Created Permission View: can edit on DAG:data_ingestion_gcs_dag_project
+[2022-03-17 19:30:29,934] {logging_mixin.py:109} INFO - [2022-03-17 19:30:29,934] {manager.py:496} INFO - Created Permission View: can read on DAG:data_ingestion_gcs_dag_project
+[2022-03-17 19:30:29,934] {logging_mixin.py:109} INFO - [2022-03-17 19:30:29,934] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-03-17 19:30:29,945] {logging_mixin.py:109} INFO - [2022-03-17 19:30:29,944] {dag.py:2415} INFO - Creating ORM DAG for data_ingestion_gcs_dag_project
+[2022-03-17 19:30:29,961] {logging_mixin.py:109} INFO - [2022-03-17 19:30:29,960] {dag.py:2935} INFO - Setting next_dagrun for data_ingestion_gcs_dag_project to 2016-01-01T00:00:00+00:00
+[2022-03-17 19:30:29,982] {processor.py:171} INFO - Processing /opt/airflow/dags/data_ingestion_gcs_dag_sofia_kaggle.py took 5.726 seconds
